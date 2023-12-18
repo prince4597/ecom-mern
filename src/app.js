@@ -1,4 +1,11 @@
-const express = require("express")
-const app = express()
+import logo from "./logo.svg";
 
-module.exports = app
+function App() {
+  return (
+    <>
+      <p>Hello</p>
+    </>
+  );
+}
+
+export default App;

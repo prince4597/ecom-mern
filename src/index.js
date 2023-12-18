@@ -1,15 +1,17 @@
-require('dotenv').config({ path: './.env' })
-const db = require("./db")
-const app = require('./app')
-const port = process.env.PORT || 1254
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-db()
-    .then(() => {
-        app.listen(port, () => {
-            console.log(`server is running on http://localhost:${port}/`)
-        })
-    })
-    .catch((error) => {
-        console.log("MONGODB conntion Faild error", error)
-        process.exit(1)
-    })
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
