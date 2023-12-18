@@ -6,7 +6,7 @@ const port = process.env.PORT || 1254
 db()
     .then(() => {
         app.listen(port, () => {
-            console.log(`server is running on port ${port}`)
+            console.log(`server is running on http://localhost:${port}/`)
         })
     })
     .catch((error) => {
