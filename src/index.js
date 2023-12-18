@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: './.env' })
 const db = require("./db")
 const app = require('./app')
 const port = process.env.PORT || 1254
