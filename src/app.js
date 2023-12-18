@@ -1,11 +1,8 @@
-import logo from "./logo.svg";
+import React from 'react'
 
-function App() {
+export const App = () => {
   return (
-    <>
-      <p>Hello</p>
-    </>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
