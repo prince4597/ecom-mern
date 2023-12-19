@@ -16,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "npm run dev --prefix ./back",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
